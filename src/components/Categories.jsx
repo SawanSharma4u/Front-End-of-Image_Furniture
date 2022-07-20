@@ -3,6 +3,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import { categories } from "../data";
 import CategoriesItem from "./CategoriesItem";
+import { mobile } from "../responsive";
 
 const Parent = styled.div`
 background-color: #94B49F;
@@ -17,6 +18,7 @@ const Container = styled.div`
   overflow: hidden;
   justify-content: space-between;
   align-item: center;
+  ${mobile({ padding: "0px", flexDirection:"column" })}
 `;
 
 const Arrow = styled.div`

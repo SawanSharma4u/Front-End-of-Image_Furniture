@@ -26,28 +26,28 @@ export const sliderItems = [
 export const categories = [
     {
         id: 1,
-        img: "img/chair/IMG-20181011-WA0004.jpg",
-        title: "Dining Chair",
-    },
-    {
-        id: 2,
-        img: "img/Dinning Set/IMG-20180823-WA0011.jpg",
-        title: "Dining Set",
-    },
-    {
-        id: 3,
-        img: "img/HomeInterior/car3.jpg",
-        title: "Bedroom Set",
-    },
-    {
-        id: 4,
-        img: "img/Sofa/sofa-3.png",
-        title: "Sofa",
+        img: "img/chair/chair7.png",
+        title: "Dining Chairs",
     },
     {
         id: 5,
-        img: "img/Table/werwefr.jpg",
-        title: "Table",
+        img: "img/Table/3.jpg",
+        title: "Tables",
+    },
+    {
+        id: 4,
+        img: "img/Sofa/sofa13.jpg",
+        title: "Sofa",
+    },
+    {
+        id: 2,
+        img: "img/Dinning Set/set5.jpg",
+        title: "Dining Table",
+    },
+    {
+        id: 3,
+        img: "img/Table/4.jpg",
+        title: "Bedroom Set",
     }
 ]
 

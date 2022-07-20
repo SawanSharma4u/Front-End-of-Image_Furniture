@@ -2,17 +2,21 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
-  height: 60px;
-  background-color: #A3E4DB
+  height: 80px;
+  background-color: #A3E4DB;
+  ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  height: 100%;
+  padding: 0px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ padding: "10px 0px" })}
 `;
 
 const Left = styled.div`
@@ -26,10 +30,11 @@ const Left = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
+  border: 0.5px solid black;
   display: flex;
   align-items: center;
   margin-left: 25px;
@@ -37,8 +42,9 @@ const SearchContainer = styled.div`
 `;
 
 const Input = styled.input`
-background-color: #A3E4DB;
+  background-color: #A3E4DB;
   border: none;
+  ${mobile({ width: "50px" })}
 `;
 
 const Center = styled.div`
@@ -46,10 +52,17 @@ const Center = styled.div`
   text-align: center;
 `;
 
+const Span = styled.span`
+  font-family: 'Dancing Script', cursive;
+  color: white;
+`;
+
 const Logo = styled.h1`
   font-family: 'Dancing Script', cursive;
   letter-spacing: 2px;
+  font-size: 45px;
   font-weight: bold;
+  ${mobile({ fontSize: "24px" })}
 `;
 const Right = styled.div`
   flex: 1;
@@ -58,12 +71,14 @@ const Right = styled.div`
   justify-content: flex-end;
   font-weight:700;
   letter-spacing: 1.5px;
+  ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
@@ -78,7 +93,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Image Furniture</Logo>
+          <Logo><Span>Image</Span>Furniture</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
